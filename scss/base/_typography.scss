@@ -1,0 +1,46 @@
+@use "../abstracts" as*;
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: $default-font-size;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-tertiary-dark;
+}
+
+.heading-primary {
+    font-family: "Playfair";
+    font-size: 8rem;
+    text-align: center;
+
+    &--main {
+        color: $color-white;
+        display: block;
+    }
+
+    &--sub {
+        color: $color-grey;
+        font-family: "Lato";
+        font-size: 2rem;
+        display: block;
+    }
+}
+
+.paragraph {
+
+
+    &__search {
+        font-size: 1.2rem;
+
+        &--main {
+            color: $color-grey;
+        }
+
+        &--sub {
+            color: $color-grey-dark-3;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+}

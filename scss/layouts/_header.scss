@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(360deg, rgba($color-white , .6) 20%, transparent 50%), url(../assets/img/img_header.png);
+    background-size: cover;
+    position: relative;
+
+    &__content {
+        @include absCenter;
+
+        &--text {
+            animation: moveInTop 1s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+
+        &--search {
+            animation: moveInBottom 1s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+
+    &__search .row {
+        display: flex;
+        align-items: center;
+        background-color: rgba($color: $color-white, $alpha: .15);
+        backdrop-filter: blur(1.6rem);
+        -webkit-backdrop-filter: blur(1.6rem);
+        border: 1px solid rgba($color: $color-white, $alpha: .25);
+        padding: 1.6rem 2rem;
+        border-radius: 2.4rem;
+        box-shadow: 0 .8rem 3.4rem rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 2.4rem;
+        flex-shrink: 0;
+        color: $color-white;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+}
