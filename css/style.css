@@ -41,9 +41,14 @@ body {
   font-size: 3.6rem;
 }
 
+.heading-tertiary {
+  font-family: "Playfair";
+  font-size: 2.4rem;
+}
+
 .paragraph {
   font-family: "Lato";
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #777;
 }
 .paragraph__search {
@@ -204,7 +209,77 @@ body {
   transform: scale(1.08);
 }
 
-.destination .row {
+.feature__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  height: 60rem;
+  cursor: pointer;
+  background-color: #fff;
+  transition: transform 0.4s;
+}
+.feature__card:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.5rem 2rem rgba(37, 37, 37, 0.15);
+}
+.feature__img--img {
+  display: block;
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.feature__img--rating {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(1.6rem);
+}
+.feature__img--star {
+  position: relative;
+  display: inline-block;
+  color: #14B8A6;
+  margin-right: 0.4rem;
+  top: 0.1rem;
+}
+.feature__container {
+  padding: 2rem 3rem;
+  position: relative;
+}
+.feature__title {
+  display: inline-block;
+}
+.feature__pricing {
+  display: inline-block;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  text-align: end;
+}
+.feature__pricing--price {
+  display: block;
+  color: #14B8A6;
+}
+.feature__pricing--for {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 1.2rem;
+}
+.feature__name {
+  display: block;
+  padding: 1.6rem 0;
+  border-top: 1px solid #eee;
+  color: #777;
+}
+.feature__name--icon {
+  margin-right: 1rem;
+}
+
+.feature .row {
   max-width: 180rem;
 }
 
@@ -253,7 +328,7 @@ body {
 }
 
 .row {
-  max-width: 114rem;
+  max-width: 180rem;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -292,6 +367,11 @@ body {
 }
 .section-destinations__text {
   position: relative;
+}
+
+.section-features {
+  background-color: #F1F3FF;
+  padding: 9.6rem 6.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
