@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.value-card {
+    background-color: rgba($color: $color-white, $alpha: .40);
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    height: 25rem;
+    box-shadow: 0 .5rem 1rem rgba($color: $color-black, $alpha: .05);
+    transition: all .4s;
+
+    &__icon {
+        display: block;
+    }
+
+    &__text {
+        display: block;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        box-shadow: 0 1rem 1.5rem rgba($color: $color-black, $alpha: .15);
+    }
+}

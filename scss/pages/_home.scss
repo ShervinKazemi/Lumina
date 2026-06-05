@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .section-destinations {
-    background-color: $color-white;
+    background-color: $color-background;
     padding: 9.6rem 6.4rem;
 
     &__text {
@@ -12,4 +12,33 @@
 .section-features {
     background-color: #F1F3FF;
     padding: 9.6rem 6.4rem;
+}
+
+.section-value {
+    background-color: $color-background;
+    padding: 9.6rem 6.4rem;
+    display: table;
+    align-items: center;
+    justify-content: center;
+
+    &__heading {
+        width: 30%;
+        display: table-cell;
+        vertical-align: middle;
+
+        &--text {
+            color: $color-secondary;
+            font-weight: bold;
+        }
+    }
+}
+
+.section-value .row {
+    margin-left: 6rem;
+}
+
+.section-value .row .col-1-of-3 {
+    display: table-cell;
+    text-align: start;
+
 }

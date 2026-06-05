@@ -263,6 +263,7 @@ body {
 .feature__pricing--price {
   display: block;
   color: #14B8A6;
+  font-weight: bold;
 }
 .feature__pricing--for {
   text-transform: uppercase;
@@ -281,6 +282,25 @@ body {
 
 .feature .row {
   max-width: 180rem;
+}
+
+.value-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  height: 25rem;
+  box-shadow: 0 0.5rem 1rem rgba(37, 37, 37, 0.05);
+  transition: all 0.4s;
+}
+.value-card__icon {
+  display: block;
+}
+.value-card__text {
+  display: block;
+}
+.value-card:hover {
+  background-color: #fff;
+  box-shadow: 0 1rem 1.5rem rgba(37, 37, 37, 0.15);
 }
 
 .header {
@@ -362,7 +382,7 @@ body {
 }
 
 .section-destinations {
-  background-color: #fff;
+  background-color: rgba(248, 250, 252, 0.3);
   padding: 9.6rem 6.4rem;
 }
 .section-destinations__text {
@@ -372,6 +392,32 @@ body {
 .section-features {
   background-color: #F1F3FF;
   padding: 9.6rem 6.4rem;
+}
+
+.section-value {
+  background-color: rgba(248, 250, 252, 0.3);
+  padding: 9.6rem 6.4rem;
+  display: table;
+  align-items: center;
+  justify-content: center;
+}
+.section-value__heading {
+  width: 30%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.section-value__heading--text {
+  color: #14B8A6;
+  font-weight: bold;
+}
+
+.section-value .row {
+  margin-left: 6rem;
+}
+
+.section-value .row .col-1-of-3 {
+  display: table-cell;
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */
