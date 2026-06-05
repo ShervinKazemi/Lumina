@@ -8,6 +8,7 @@
     position: relative;
 
     &__content {
+        width: 55%;
         @include absCenter;
 
         &--text {

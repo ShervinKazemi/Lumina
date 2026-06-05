@@ -17,6 +17,7 @@ body {
     &--main {
         color: $color-white;
         display: block;
+        font-weight: 700;
     }
 
     &--sub {
@@ -27,12 +28,19 @@ body {
     }
 }
 
-.paragraph {
+.heading-secondary {
+    font-family: "Playfair";
+    font-size: 3.6rem;
+}
 
+.paragraph {
+    font-family: "Lato";
+    font-size: 2rem;
+    color: $color-grey-dark;
 
     &__search {
         font-size: 1.2rem;
-
+        text-align: start;
         &--main {
             color: $color-grey;
         }
@@ -42,5 +50,9 @@ body {
             font-size: 1.6rem;
             font-weight: 700;
         }
+    }
+
+    &__destinations {
+        display: inline-block;
     }
 }

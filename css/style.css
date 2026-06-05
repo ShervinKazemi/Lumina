@@ -27,6 +27,7 @@ body {
 .heading-primary--main {
   color: #fff;
   display: block;
+  font-weight: 700;
 }
 .heading-primary--sub {
   color: #eee;
@@ -35,8 +36,19 @@ body {
   display: block;
 }
 
+.heading-secondary {
+  font-family: "Playfair";
+  font-size: 3.6rem;
+}
+
+.paragraph {
+  font-family: "Lato";
+  font-size: 2rem;
+  color: #777;
+}
 .paragraph__search {
   font-size: 1.2rem;
+  text-align: start;
 }
 .paragraph__search--main {
   color: #eee;
@@ -45,6 +57,9 @@ body {
   color: #333;
   font-size: 1.6rem;
   font-weight: 700;
+}
+.paragraph__destinations {
+  display: inline-block;
 }
 
 .u-center-text {
@@ -127,6 +142,19 @@ body {
 .btn--black::after {
   background-color: #0B1220;
 }
+.btn--text {
+  text-decoration: none;
+  color: #0B1220;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.2s;
+}
+.btn--text:hover {
+  background-color: #0B1220;
+  color: #fff;
+  border-radius: 4px;
+}
 .btn::after {
   content: "";
   display: inline-block;
@@ -144,6 +172,42 @@ body {
   opacity: 0;
 }
 
+.destination__box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  cursor: pointer;
+  height: 30rem;
+}
+.destination__box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgba(37, 37, 37, 0.75), transparent 55%);
+}
+.destination__img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 30rem;
+  transition: all 0.4s;
+}
+.destination__text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #EDF1F5;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.destination__box:hover .destination__img {
+  transform: scale(1.08);
+}
+
+.destination .row {
+  max-width: 180rem;
+}
+
 .header {
   height: 100vh;
   background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.6) 20%, transparent 50%), url(../assets/img/img_header.png);
@@ -151,6 +215,7 @@ body {
   position: relative;
 }
 .header__content {
+  width: 55%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -216,6 +281,17 @@ body {
 }
 .row .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-1-of-6 {
+  width: calc((100% - 5 * 6rem) / 6);
+}
+
+.section-destinations {
+  background-color: #fff;
+  padding: 9.6rem 6.4rem;
+}
+.section-destinations__text {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
