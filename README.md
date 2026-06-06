@@ -10,7 +10,7 @@ Watch the demo video:
 
 ## Overview
 
-Lumina is a modern, The project uses a modular CSS architecture with BEM-style naming conventions.
+The project uses a modular CSS architecture with BEM-style naming conventions.
 
 ## Features
 
