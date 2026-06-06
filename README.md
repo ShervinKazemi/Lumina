@@ -2,12 +2,6 @@
 
 A luxury travel booking website built with HTML, SCSS, and CSS.
 
-## Demo
-
-Watch the demo video:
-
-<video src="lumina.mp4" controls width="100%"></video>
-
 ## Overview
 
 The project uses a modular CSS architecture with BEM-style naming conventions.
