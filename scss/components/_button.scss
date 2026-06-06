@@ -21,7 +21,6 @@
     }
 
     &:hover {
-        transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .2);
     }
 
@@ -38,6 +37,16 @@
 
         &::after {
             background-color: $color-neutral;
+        }
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-black;
+        z-index: 3;
+
+        &::after {
+            background-color: $color-white;
         }
     }
 

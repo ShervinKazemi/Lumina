@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.offers {
+    background-image: url(../../assets/img/img_way.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 2rem;
+    padding: 9.6rem 6.4rem;
+    overflow: hidden;
+    position: relative;
+
+    &__box {
+        width: 50%;
+        
+    }
+
+    &__title {
+        color: $color-grey-light;
+        z-index: 7;
+    }
+
+    &__paragraph {
+        color: $color-grey;
+        z-index: 3;
+        font-size: 2rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        inset: 0;
+
+        background-image: linear-gradient(to top, rgba($color-black , .75), transparent 55%);
+    }
+
+}

@@ -12,12 +12,13 @@ body {
 .heading-primary {
     font-family: "Playfair";
     font-size: 8rem;
-    text-align: center;
+    color: $color-white;
 
     &--main {
         color: $color-white;
         display: block;
         font-weight: 700;
+        text-align: center;
     }
 
     &--sub {
@@ -25,6 +26,7 @@ body {
         font-family: "Lato";
         font-size: 2rem;
         display: block;
+        text-align: center;
     }
 }
 
@@ -46,6 +48,7 @@ body {
     &__search {
         font-size: 1.2rem;
         text-align: start;
+
         &--main {
             color: $color-grey;
         }
